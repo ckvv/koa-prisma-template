@@ -13,8 +13,8 @@ model User {
   password   String    @db.VarChar(255)
   salt       String    @db.VarChar(255)
   role       Int
-  updatedAt DateTime  @updatedAt @map("updated_at")
-  createdAt DateTime  @db.Timestamptz(6) @default(now()) @map("created_at")
-  deletedAt DateTime? @db.Timestamptz(6) @map("deleted_at")
+  updatedAt  DateTime  @updatedAt @map("updated_at")
+  createdAt  DateTime  @db.Timestamptz(6) @default(now()) @map("created_at")
+  deletedAt  DateTime? @db.Timestamptz(6) @map("deleted_at")
   @@map( name:"users")
 }
