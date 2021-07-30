@@ -1,0 +1,355 @@
+[2021-07-30T11:37:16.782] [ERROR] error - [
+  PrismaClientValidationError: 
+  Invalid `prisma.user.findFirst()` invocation:
+  
+  {
+    where: {
+      id: '1'
+          ~~~
+    }
+  }
+  
+  Argument id: Got invalid value '1' on prisma.findFirstusers. Provided String, expected BigIntFilter or BigInt:
+  type BigIntFilter {
+    equals?: BigInt
+    in?: List<BigInt>
+    notIn?: List<BigInt>
+    lt?: BigInt
+    lte?: BigInt
+    gt?: BigInt
+    gte?: BigInt
+    not?: BigInt | NestedBigIntFilter
+  }
+  type BigIntFilter {
+    equals?: BigInt
+    in?: List<BigInt>
+    notIn?: List<BigInt>
+    lt?: BigInt
+    lte?: BigInt
+    gt?: BigInt
+    gte?: BigInt
+    not?: BigInt | NestedBigIntFilter
+  }
+  
+  
+      at Document.validate (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@prisma/client/runtime/index.js:33530:19)
+      at NewPrismaClient._executeRequest (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@prisma/client/runtime/index.js:35637:17)
+      at consumer (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@prisma/client/runtime/index.js:35582:23)
+      at /Users/chenkai/Desktop/koa-prisma-template/node_modules/@prisma/client/runtime/index.js:35584:47
+      at AsyncResource.runInAsyncScope (async_hooks.js:197:9)
+      at NewPrismaClient._request (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@prisma/client/runtime/index.js:35584:25)
+      at Object.then (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@prisma/client/runtime/index.js:35692:39)
+      at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+    clientVersion: '2.28.0',
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:8000',
+      vary: 'Origin'
+    }
+  }
+]
+[2021-07-30T11:37:21.092] [ERROR] error - [
+  TypeError: Do not know how to serialize a BigInt
+      at JSON.stringify (<anonymous>)
+      at toString (/Users/chenkai/Desktop/koa-prisma-template/node_modules/jws/lib/tostring.js:9:15)
+      at jwsSecuredInput (/Users/chenkai/Desktop/koa-prisma-template/node_modules/jws/lib/sign-stream.js:21:34)
+      at Object.jwsSign [as sign] (/Users/chenkai/Desktop/koa-prisma-template/node_modules/jws/lib/sign-stream.js:31:22)
+      at Object.module.exports [as sign] (/Users/chenkai/Desktop/koa-prisma-template/node_modules/jsonwebtoken/sign.js:204:16)
+      at jwtSign (/Users/chenkai/Desktop/koa-prisma-template/app/utils/jwt.js:12:21)
+      at signIn (/Users/chenkai/Desktop/koa-prisma-template/app/controller/sign.js:30:17)
+      at processTicksAndRejections (internal/process/task_queues.js:95:5)
+      at async bodyParser (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-bodyparser/index.js:95:5)
+      at async cors (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/cors/index.js:98:16) {
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:8000',
+      vary: 'Origin'
+    }
+  }
+]
+[2021-07-30T11:38:18.090] [ERROR] error - [
+  TypeError: Do not know how to serialize a BigInt
+      at JSON.stringify (<anonymous>)
+      at toString (/Users/chenkai/Desktop/koa-prisma-template/node_modules/jws/lib/tostring.js:9:15)
+      at jwsSecuredInput (/Users/chenkai/Desktop/koa-prisma-template/node_modules/jws/lib/sign-stream.js:21:34)
+      at Object.jwsSign [as sign] (/Users/chenkai/Desktop/koa-prisma-template/node_modules/jws/lib/sign-stream.js:31:22)
+      at Object.module.exports [as sign] (/Users/chenkai/Desktop/koa-prisma-template/node_modules/jsonwebtoken/sign.js:204:16)
+      at jwtSign (/Users/chenkai/Desktop/koa-prisma-template/app/utils/jwt.js:12:21)
+      at signIn (/Users/chenkai/Desktop/koa-prisma-template/app/controller/sign.js:30:17)
+      at processTicksAndRejections (internal/process/task_queues.js:95:5)
+      at async bodyParser (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-bodyparser/index.js:95:5)
+      at async cors (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/cors/index.js:98:16) {
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:8000',
+      vary: 'Origin'
+    }
+  }
+]
+[2021-07-30T11:38:18.093] [ERROR] error - [
+  TypeError: Do not know how to serialize a BigInt
+      at JSON.stringify (<anonymous>)
+      at toString (/Users/chenkai/Desktop/koa-prisma-template/node_modules/jws/lib/tostring.js:9:15)
+      at jwsSecuredInput (/Users/chenkai/Desktop/koa-prisma-template/node_modules/jws/lib/sign-stream.js:21:34)
+      at Object.jwsSign [as sign] (/Users/chenkai/Desktop/koa-prisma-template/node_modules/jws/lib/sign-stream.js:31:22)
+      at Object.module.exports [as sign] (/Users/chenkai/Desktop/koa-prisma-template/node_modules/jsonwebtoken/sign.js:204:16)
+      at jwtSign (/Users/chenkai/Desktop/koa-prisma-template/app/utils/jwt.js:12:21)
+      at signIn (/Users/chenkai/Desktop/koa-prisma-template/app/controller/sign.js:30:17)
+      at processTicksAndRejections (internal/process/task_queues.js:95:5)
+      at async bodyParser (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-bodyparser/index.js:95:5)
+      at async cors (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/cors/index.js:98:16) {
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:8000',
+      vary: 'Origin'
+    }
+  }
+]
+[2021-07-30T11:46:35.451] [ERROR] error - [
+  TypeError: Do not know how to serialize a BigInt
+      at JSON.stringify (<anonymous>)
+      at toString (/Users/chenkai/Desktop/koa-prisma-template/node_modules/jws/lib/tostring.js:9:15)
+      at jwsSecuredInput (/Users/chenkai/Desktop/koa-prisma-template/node_modules/jws/lib/sign-stream.js:21:34)
+      at Object.jwsSign [as sign] (/Users/chenkai/Desktop/koa-prisma-template/node_modules/jws/lib/sign-stream.js:31:22)
+      at Object.module.exports [as sign] (/Users/chenkai/Desktop/koa-prisma-template/node_modules/jsonwebtoken/sign.js:204:16)
+      at jwtSign (/Users/chenkai/Desktop/koa-prisma-template/app/utils/jwt.js:12:21)
+      at signIn (/Users/chenkai/Desktop/koa-prisma-template/app/controller/sign.js:30:17)
+      at processTicksAndRejections (internal/process/task_queues.js:95:5)
+      at async bodyParser (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-bodyparser/index.js:95:5)
+      at async cors (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/cors/index.js:98:16) {
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:8000',
+      vary: 'Origin'
+    }
+  }
+]
+[2021-07-30T11:54:26.254] [ERROR] error - [
+  TypeError: Cannot read property 'findFirst' of undefined
+      at /Users/chenkai/Desktop/koa-prisma-template/app/middleware/authorize.js:23:37
+      at processTicksAndRejections (internal/process/task_queues.js:95:5)
+      at async bodyParser (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-bodyparser/index.js:95:5)
+      at async cors (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/cors/index.js:98:16)
+      at async /Users/chenkai/Desktop/koa-prisma-template/app/middleware/reslogger.js:10:5 {
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:8000',
+      vary: 'Origin'
+    }
+  }
+]
+[2021-07-30T11:54:31.439] [ERROR] error - [
+  TypeError: Cannot read property 'findFirst' of undefined
+      at UserService.signin (/Users/chenkai/Desktop/koa-prisma-template/app/service/user.js:29:46)
+      at signIn (/Users/chenkai/Desktop/koa-prisma-template/app/controller/sign.js:29:38)
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at /Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/router/lib/router.js:372:16
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at /Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:34:12
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/router/lib/router.js:377:31)
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at bodyParser (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-bodyparser/index.js:95:11)
+      at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:8000',
+      vary: 'Origin'
+    }
+  }
+]
+[2021-07-30T11:55:00.552] [ERROR] error - [
+  TypeError: Cannot read property 'findFirst' of undefined
+      at UserService.signin (/Users/chenkai/Desktop/koa-prisma-template/app/service/user.js:29:46)
+      at signIn (/Users/chenkai/Desktop/koa-prisma-template/app/controller/sign.js:29:38)
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at /Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/router/lib/router.js:372:16
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at /Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:34:12
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/router/lib/router.js:377:31)
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at bodyParser (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-bodyparser/index.js:95:11)
+      at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:8000',
+      vary: 'Origin'
+    }
+  }
+]
+[2021-07-30T11:55:05.856] [ERROR] error - [
+  TypeError: Cannot read property 'findFirst' of undefined
+      at UserService.signin (/Users/chenkai/Desktop/koa-prisma-template/app/service/user.js:29:46)
+      at signIn (/Users/chenkai/Desktop/koa-prisma-template/app/controller/sign.js:29:38)
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at /Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/router/lib/router.js:372:16
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at /Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:34:12
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/router/lib/router.js:377:31)
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at bodyParser (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-bodyparser/index.js:95:11)
+      at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:8000',
+      vary: 'Origin'
+    }
+  }
+]
+[2021-07-30T11:57:33.655] [ERROR] error - [
+  TypeError: Cannot read property 'findFirst' of undefined
+      at UserService.signin (/Users/chenkai/Desktop/koa-prisma-template/app/service/user.js:29:46)
+      at signIn (/Users/chenkai/Desktop/koa-prisma-template/app/controller/sign.js:29:38)
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at /Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/router/lib/router.js:372:16
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at /Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:34:12
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/router/lib/router.js:377:31)
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at bodyParser (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-bodyparser/index.js:95:11)
+      at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:8000',
+      vary: 'Origin'
+    }
+  }
+]
+[2021-07-30T11:57:50.770] [ERROR] error - [
+  TypeError: Cannot read property 'findFirst' of undefined
+      at UserService.signin (/Users/chenkai/Desktop/koa-prisma-template/app/service/user.js:29:46)
+      at signIn (/Users/chenkai/Desktop/koa-prisma-template/app/controller/sign.js:29:38)
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at /Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/router/lib/router.js:372:16
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at /Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:34:12
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/router/lib/router.js:377:31)
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at bodyParser (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-bodyparser/index.js:95:11)
+      at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:8000',
+      vary: 'Origin'
+    }
+  }
+]
+[2021-07-30T11:58:46.168] [ERROR] error - [
+  TypeError: Cannot read property 'findFirst' of undefined
+      at UserService.signin (/Users/chenkai/Desktop/koa-prisma-template/app/service/user.js:29:46)
+      at signIn (/Users/chenkai/Desktop/koa-prisma-template/app/controller/sign.js:29:38)
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at /Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/router/lib/router.js:372:16
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at /Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:34:12
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/router/lib/router.js:377:31)
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at bodyParser (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-bodyparser/index.js:95:11)
+      at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:8000',
+      vary: 'Origin'
+    }
+  }
+]
+[2021-07-30T12:10:03.684] [ERROR] error - [
+  TypeError: Cannot read property 'findFirst' of undefined
+      at UserService.signin (/Users/chenkai/Desktop/koa-prisma-template/app/service/user.js:29:46)
+      at signIn (/Users/chenkai/Desktop/koa-prisma-template/app/controller/sign.js:29:38)
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at /Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/router/lib/router.js:372:16
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at /Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:34:12
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/router/lib/router.js:377:31)
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at bodyParser (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-bodyparser/index.js:95:11)
+      at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:8000',
+      vary: 'Origin'
+    }
+  }
+]
+[2021-07-30T12:12:49.850] [ERROR] error - [
+  TypeError: Cannot read property 'findFirst' of undefined
+      at /Users/chenkai/Desktop/koa-prisma-template/app/middleware/authorize.js:23:37
+      at processTicksAndRejections (internal/process/task_queues.js:95:5)
+      at async bodyParser (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-bodyparser/index.js:95:5)
+      at async cors (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/cors/index.js:98:16)
+      at async /Users/chenkai/Desktop/koa-prisma-template/app/middleware/reslogger.js:10:5 {
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:8000',
+      vary: 'Origin'
+    }
+  }
+]
+[2021-07-30T12:12:52.986] [ERROR] error - [
+  TypeError: Cannot read property 'findFirst' of undefined
+      at UserService.signin (/Users/chenkai/Desktop/koa-prisma-template/app/service/user.js:29:46)
+      at signIn (/Users/chenkai/Desktop/koa-prisma-template/app/controller/sign.js:29:38)
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at /Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/router/lib/router.js:372:16
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at /Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:34:12
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/router/lib/router.js:377:31)
+      at dispatch (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-compose/index.js:42:32)
+      at bodyParser (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-bodyparser/index.js:95:11)
+      at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:8000',
+      vary: 'Origin'
+    }
+  }
+]
+[2021-07-30T12:19:07.850] [ERROR] error - [
+  PrismaClientKnownRequestError2 [PrismaClientKnownRequestError]: 
+  Invalid `prisma.user.findFirst()` invocation:
+  
+  
+    The column `users.updatedAt` does not exist in the current database.
+      at cb (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@prisma/client/runtime/index.js:34800:17)
+      at processTicksAndRejections (internal/process/task_queues.js:95:5)
+      at async UserService.signin (/Users/chenkai/Desktop/koa-prisma-template/app/service/user.js:29:23)
+      at async signIn (/Users/chenkai/Desktop/koa-prisma-template/app/controller/sign.js:29:19)
+      at async bodyParser (/Users/chenkai/Desktop/koa-prisma-template/node_modules/koa-bodyparser/index.js:95:5)
+      at async cors (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@koa/cors/index.js:98:16)
+      at async /Users/chenkai/Desktop/koa-prisma-template/app/middleware/reslogger.js:10:5 {
+    code: 'P2022',
+    clientVersion: '2.28.0',
+    meta: { column: 'users.updatedAt' },
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:8000',
+      vary: 'Origin'
+    }
+  }
+]
+[2021-07-30T12:20:24.114] [ERROR] error - [
+  PrismaClientValidationError: 
+  Invalid `prisma.user.findFirst()` invocation:
+  
+  {
+    attributes: [
+    ~~~~~~~~~~
+      'id',
+      'username',
+      'role'
+    ],
+    where: {
+      id: 1
+    }
+  }
+  
+  Unknown arg `attributes` in attributes for type User. Did you mean `where`? Available args:
+  type findFirstUser {
+    where?: UserWhereInput
+    orderBy?: List<UserOrderByInput> | UserOrderByInput
+    cursor?: UserWhereUniqueInput
+    take?: Int
+    skip?: Int
+    distinct?: List<UserScalarFieldEnum>
+  }
+  
+  
+      at Document.validate (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@prisma/client/runtime/index.js:33530:19)
+      at NewPrismaClient._executeRequest (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@prisma/client/runtime/index.js:35637:17)
+      at consumer (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@prisma/client/runtime/index.js:35582:23)
+      at /Users/chenkai/Desktop/koa-prisma-template/node_modules/@prisma/client/runtime/index.js:35584:47
+      at AsyncResource.runInAsyncScope (async_hooks.js:197:9)
+      at NewPrismaClient._request (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@prisma/client/runtime/index.js:35584:25)
+      at Object.then (/Users/chenkai/Desktop/koa-prisma-template/node_modules/@prisma/client/runtime/index.js:35692:39)
+      at processTicksAndRejections (internal/process/task_queues.js:95:5) {
+    clientVersion: '2.28.0',
+    headers: {
+      'Access-Control-Allow-Origin': 'http://localhost:8000',
+      vary: 'Origin'
+    }
+  }
+]
